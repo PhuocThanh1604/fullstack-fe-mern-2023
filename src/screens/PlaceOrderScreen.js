@@ -49,7 +49,7 @@ export default function PlaceOrderScreen() {
       dispatch({ type: 'CREATE_REQUEST' });
 
       const { data } = await Axios.post(
-        '/api/orders',
+        'https://fullstack-mern-2023.vercel.app/api/orders',
         {
           orderItems: cart.cartItems,
           shippingAddress: cart.shippingAddress,

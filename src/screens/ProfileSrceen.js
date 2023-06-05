@@ -37,7 +37,7 @@ export default function ProfileScreen() {
     e.preventDefault();
     try {
       const { data } = await axios.put(
-        '/api/users/profile',
+        'https://fullstack-mern-2023.vercel.app/api/users/profile',
         {
           name,
           email,

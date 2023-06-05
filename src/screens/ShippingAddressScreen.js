@@ -24,7 +24,7 @@ export default function ShippingAddressScreen() {
   const [country, setCountry] = useState(shippingAddress.country || '');
   useEffect(() => {
     if (!userInfo) {
-      navigate('/signin?redirect=/shipping');
+      navigate('https://fullstack-mern-2023.vercel.app/signin?redirect=/shipping');
     }
   }, [userInfo, navigate]);
   const submitHandler = (e) => {
